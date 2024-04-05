@@ -16,7 +16,7 @@ python3 --version
 pip --version
 ```
 
-## Installing Flask
+## Installing Dependencies
 
 In your terminal run the requirements.txt file using this pip
 
