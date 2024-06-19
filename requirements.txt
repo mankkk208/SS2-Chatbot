@@ -1,0 +1,21 @@
+# Install: pip3 install -r requirements.txt
+
+# FastAPI server
+fastapi
+
+# Databases & Data model
+pydantic
+pymongo
+
+# LangChain dependencies
+langchain
+langchain-community
+langchain-openai
+langchain-google-genai
+langchain-chroma
+
+# Bug https://github.com/langchain-ai/langchain/issues/22972 fix
+tenacity>=8.1.0,!=8.4.0
+
+# Utilities
+python-dotenv

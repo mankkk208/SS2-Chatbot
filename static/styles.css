@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a {
+    all: unset;
+}
+.container {
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    flex-direction: row;
+}
+.sidebar {
+    background-color: white;
+}
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    justify-content: center;
+    margin: 50px;
+}
+.sidebar-contents {
+    margin-bottom: 20px;
+}
+.menu-buttons {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    background: transparent;
+    border-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menu-buttons ion-icon {
+    font-size: 30px;
+    margin-right: 10px;
+}
+.menu-buttons p {
+    font-size: 20px;
+}
+.nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 7%;
+    align-items: end;
+}
+.nav-button {
+    padding-left: 20px;
+}
+.toggle-nav {
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(150, 150, 150);
+}
+.chatbox {
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+}
+.content {
+    height: 80%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+}
+.chatzone {
+    width: 53%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.chatzone::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+.messages {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    text-wrap: wrap;
+}
+.messages .user_info {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    text-wrap: wrap;
+}
+.messages .user_avatar {
+    border-radius: 50%;
+}
+.messages .user_info .user_name {
+    font-weight: 600;
+    font-size: 15px;
+}
+.messages .user_info .user_promt {
+    text-wrap: wrap;
+    word-break: break-all;
+}
+.messages img {
+    height: 30px;
+    width: 30px;
+}
+.promtbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 13%;
+}
+#textForm {
+    width: 53%;
+    position: relative;
+}
+#submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.train-bar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 13%;
+}
+#submit-text {
+    border: solid 1px rgb(66, 66, 66);
+    border-radius: 17px;
+    background-color: rgb(32, 32, 32);
+    padding: 16px 60px 16px 25px;
+    width: 100%;
+    max-width: 95vw;
+    color: white;
+    font-size: 16px;
+}
+#submit-text:focus {
+    border: solid 1px rgb(80, 80, 80);
+    outline: none;
+}
+textarea {
+    resize: none;
+    height: 90px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+textarea::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+::placeholder {
+    font-size: 15px;
+    font-weight: 500;
+}
+.invalid {
+    background-color: rgb(58, 58, 58);
+    color: rgb(41, 41, 41);
+    cursor: progress;
+}
